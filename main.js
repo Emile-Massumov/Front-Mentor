@@ -5,7 +5,7 @@ const selectedRating= document.getElementById('selected-rating');
 const feedBackBox= document.getElementById('feedback-box');
 
 btns.forEach((btn) => {
-    btn.addEventLisner('click', function(e) {
+    btn.addEventListener('click', function(e) {
     let selectedBtn= e.currentTarget;
     for (let i=0 ; i<btns.length; i++) {
 

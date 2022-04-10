@@ -21,21 +21,51 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 8px solid red;
     height: 100vh;
     padding: 0 30px;
     text-align: center;
 
 }
+.text-selected {
+    color:hsl(25, 97%, 53%); 
+    font-size: 15px;
+    border: 2px solid hsl(217, 12%, 63%);
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    padding: 8px 0px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.text-selected-p {
+    text-align: center;
+}
+.text-selected-h2 {
+    text-align: center;
+}
 .content { 
     background-color: rgb(36, 35, 35);
-    height: 40vh;
     border-radius: 16px;
+}
+.thanks-container {
+    
+    padding: 30px;
+    text-align: center;
 }
 h2 {
     margin-bottom: 10px;
     text-align: left;
     padding: 0 0 0 30px;
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+}
+p {
+    color:hsl(217, 12%, 63%);
+    text-align: left;
+    padding: 0 0 0 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Overpass', sans-serif;
 }
 .star-logo {
  display: flex;
@@ -48,6 +78,7 @@ h2 {
  }
  .circle {
     background-color: rgb(71, 61, 61);
+    border:rgb(71, 61, 61) ;
     border-radius: 50%;
     width: 36px;
     height: 36px;

@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
@@ -16,56 +18,39 @@
   </style>
 </head>
 <body>
+  <main>
 
   <!-- Rating state start -->
-<div class="content-wrapper">
+  <div class="content-wrapper">
   <div class="content" id="feedback-box">
     <div class="star-logo">
       <img src="./images/icon-star.svg" alt=""/>
     </div>
-  <div class="text">
   <h2>How did we do?</h2>
-
-  <p class="text-p">Please let us know how we did with your support request. All feedback is appreciated 
+  <p>Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
   <div class="content-numbers">
   <button class="circle" id="1" aria-selected="false" role="circle">1</button>
-  <div class="circle" id="2" aria-selected="false" role="circle">2</div>
-  <div class="circle" id="3" aria-selected="false" role="circle">3</div>
-  <div class="circle" id="4" aria-selected="false" role="circle">4</div>
-  <div class="circle" id="5" aria-selected="false" role="circle">5</div>
-</div>
-<button type="submit" id="submit">Submit</button>
-</div>
-</div>
-</div>
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-  <div  class="content-wrapper">
-    <div hidden class="content" id="thank-you-box">
-      <div class="star-logo">
-        <img src="./images/illustration-thank-you.svg" alt=""/>
-      </div>
-      <div class="text-result">
-  <h2>You selected <span id="selected-rating"></span>out of 5</h2>
-
-  <p class="text-p">Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!</p>
-
-  <!-- Thank you state end -->
-
-
+  <button class="circle" id="2" aria-selected="false" role="circle">2</button>
+  <button class="circle" id="3" aria-selected="false" role="circle">3</button>
+  <button class="circle" id="4" aria-selected="false" role="circle">4</button>
+  <button class="circle" id="5" aria-selected="false" role="circle">5</button>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
-</div>
-</div>
+  <button type="submit" id="submit">Submit</button>
+  </div>
+  <div hidden class="content thanks-container"  id="thank-you-box">
+  <img src="./images/illustration-thank-you.svg" alt=""/>
+ 
+  <h2 class="text-selected">You selected <span id="selected-rating"></span>out of 5</h2>
+ <h2 class="text-selected-h2">Thank you!</h2>
+ <p class="text-selected-p">We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+  </div>
+</main>
+  <div class="attribution">
+  <a>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    Coded by <a href="#">Émile</a>.
 </div>
 <script type="text/javascript" src="main.js"></script>
 </body>
