@@ -83,12 +83,14 @@ p {
     width: 36px;
     height: 36px;
     padding: 10px;
+    cursor: pointer;
 }
 .content-numbers {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 button {
     width: 90%;
     height: 45px;
@@ -102,3 +104,11 @@ button {
     cursor: pointer;
     margin-top: 20px;
 }
+button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .circle:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+  }
