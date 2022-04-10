@@ -19,7 +19,7 @@
 
   <!-- Rating state start -->
 <div class="content-wrapper">
-  <div class="content">
+  <div class="content" id="feedback-box">
     <div class="star-logo">
       <img src="./images/icon-star.svg" alt=""/>
     </div>
@@ -29,11 +29,11 @@
   <p class="text-p">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
   <div class="content-numbers">
-  <div class="circle">1</div>
-  <div class="circle">2</div>
-  <div class="circle">3</div>
-  <div class="circle">4</div>
-  <div class="circle">5</div>
+  <button class="circle" id="1" aria-selected="false" role="circle">1</button>
+  <div class="circle" id="2" aria-selected="false" role="circle">2</div>
+  <div class="circle" id="3" aria-selected="false" role="circle">3</div>
+  <div class="circle" id="4" aria-selected="false" role="circle">4</div>
+  <div class="circle" id="5" aria-selected="false" role="circle">5</div>
 </div>
 <button type="submit" id="submit">Submit</button>
 </div>
@@ -43,13 +43,13 @@
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <div class="content-wrapper">
-    <div class="content">
+  <div  class="content-wrapper">
+    <div hidden class="content" id="thank-you-box">
       <div class="star-logo">
         <img src="./images/illustration-thank-you.svg" alt=""/>
       </div>
-      <div class="text">
-  <h2>You selected <!-- Add rating here --> out of 5</h2>
+      <div class="text-result">
+  <h2>You selected <span id="selected-rating"></span>out of 5</h2>
 
   <p class="text-p">Thank you!
 
@@ -67,5 +67,6 @@
 </div>
 </div>
 </div>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
