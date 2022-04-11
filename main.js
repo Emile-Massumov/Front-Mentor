@@ -16,6 +16,8 @@ btns.forEach((btn) => {
         }else{ 
             selectedBtn.setAttribute('aria-selected', true);
             selectedRating.textContent=selectedBtn.id;
+        
+        
         }
     }
 })

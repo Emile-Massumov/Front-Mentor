@@ -117,12 +117,15 @@ button:hover {
   .content {
       width: 400px;
       padding-bottom: 30px;
+      
   }
+
   .content-numbers {
      padding: 0px 10px;
 }
   p {
       padding: 0 30px;
   }
+ 
 
   }
